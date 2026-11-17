@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Zarządzanie nieruchomościami Kraków - wspólnoty mieszkaniowe | Property Center</title>
+<meta name="description" content="Property Center: zarządzanie i administrowanie nieruchomościami w Krakowie. Wspólnoty mieszkaniowe i budynki komercyjne, obsługa techniczna 24/7, księgowa i prawna. Tel. 660 281 681.">
+<meta name="theme-color" content="#1B2B2E">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="img/hero-m-720.webp" imagesrcset="img/hero-m-480.webp 480w, img/hero-m-720.webp 720w, img/hero-m-960.webp 960w" imagesizes="100vw" media="(max-width:760px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-1600.webp" imagesrcset="img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-2000.webp 2000w" imagesizes="100vw" media="(min-width:761px)" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="fonts/archivo-rdzen.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/ss3-latin.woff2" crossorigin>
+<style>
+@font-face{font-family:Archivo;src:url(fonts/archivo-rdzen.woff2) format("woff2");font-weight:600 800;font-stretch:75% 100%;font-display:swap;unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:Archivo;src:url(fonts/archivo-pl.woff2) format("woff2");font-weight:600 800;font-stretch:75% 100%;font-display:swap;unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Source Sans 3";src:url(fonts/ss3-latin.woff2) format("woff2");font-weight:400 700;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
+@font-face{font-family:"Source Sans 3";src:url(fonts/ss3-latin-ext.woff2) format("woff2");font-weight:400 700;font-display:swap;unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1E00-1E9F,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Arch fb";src:local("Arial Bold"),local("Arial");size-adjust:104%;ascent-override:90%;descent-override:22%}
+@font-face{font-family:"SS fb";src:local("Arial");size-adjust:94%;ascent-override:100%;descent-override:28%}
+:root{--teal:#4DA7AF;--teal2:#1E7F88;--teal3:#166870;--graf:#565757;--ink:#1A2224;--mut:#4A5558;--g:#EEF2F3;--dark:#1B2B2E;--dark2:#132023;--line:#D9E1E3;--hh:64px;--w:min(calc(100vw - 32px),1720px)}
+@media (min-width:900px){:root{--hh:78px;--w:min(calc(100vw - 6vw),1720px)}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hh);-webkit-text-size-adjust:100%}
+body{margin:0;font-family:"Source Sans 3","SS fb",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:clamp(17px,.3vw + 15.8px,20px);line-height:1.6;color:var(--ink);background:#fff;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{margin:0;font-family:Archivo,"Arch fb",Arial,sans-serif;font-weight:700;line-height:1.1;letter-spacing:-.012em;color:var(--ink)}
+p{margin:0}
+.wrap{width:var(--w);margin:0 auto}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:8px;z-index:99;background:#fff;padding:8px 12px}
+/* przycisk: prostokat + daszek z logo */
+.btn{display:inline-flex;align-items:center;gap:14px;min-height:54px;padding:0 22px 0 24px;background:var(--teal2);color:#fff;font:700 1rem/1 Archivo,"Arch fb",Arial,sans-serif;text-decoration:none;border:0;border-radius:2px;cursor:pointer;transition:background .2s}
+.btn:hover{background:var(--teal3)}
+.btn:focus-visible{outline:3px solid #fff;outline-offset:3px;box-shadow:0 0 0 6px var(--teal2)}
+.btn svg{width:22px;height:16px;flex:none;transition:transform .2s}
+.btn:hover svg{transform:translateX(3px)}
+/* naglowek */
+.top{position:sticky;top:0;z-index:50;background:#fff;transition:box-shadow .2s}
+.top.sc{box-shadow:0 1px 0 var(--line),0 6px 20px rgba(26,34,36,.06)}
+.top .wrap{display:flex;align-items:center;gap:24px;height:var(--hh)}
+.logo{display:block;flex:none}
+.logo img{height:36px;width:auto}
+@media (min-width:900px){.logo img{height:46px}}
+.menu{display:flex;align-items:center;gap:clamp(18px,1.8vw,38px);margin-left:auto;font:600 1rem/1 Archivo,"Arch fb",Arial,sans-serif}
+.menu a{text-decoration:none;color:var(--ink);padding:10px 0;position:relative}
+.menu a:hover{color:var(--teal2)}
+.menu a.on{color:var(--teal2)}
+.menu a.on::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:2px;background:var(--teal)}
+.menu .ext{color:var(--mut);font-weight:600}
+.tel{display:flex;flex-direction:column;align-items:flex-end;text-decoration:none;line-height:1.15;padding-left:clamp(14px,1.6vw,30px);border-left:1px solid var(--line)}
+.tel small{font:600 .74rem/1.2 "Source Sans 3","SS fb",Arial,sans-serif;color:var(--mut)}
+.tel b{font:700 1.08rem/1.2 Archivo,"Arch fb",Arial,sans-serif;color:var(--ink)}
+.tel:hover b{color:var(--teal2)}
+.burger{display:none;margin-left:auto;width:48px;height:48px;border:0;background:none;padding:12px;cursor:pointer}
+.burger span{display:block;height:2px;background:var(--ink);margin:6px 0;transition:transform .2s,opacity .2s}
+.ktel{display:none}
+/* hero */
+.hero{position:relative;overflow:hidden;background:var(--dark);color:#fff;min-height:calc(100vh - var(--hh));min-height:calc(100svh - var(--hh));display:flex;align-items:center}
+.hero .ph{position:absolute;inset:0;margin:0}
+.hero .ph img{width:100%;height:100%;object-fit:cover;object-position:60% 40%}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(15,26,29,.86) 0%,rgba(15,26,29,.70) 34%,rgba(15,26,29,.18) 64%,rgba(15,26,29,0) 80%),linear-gradient(0deg,rgba(15,26,29,.45),rgba(15,26,29,0) 30%)}
+.hero-in{position:relative;z-index:2;padding:clamp(40px,7vh,96px) 0}
+.hero-txt{max-width:min(46rem,56vw)}
+.dach{display:block;width:clamp(150px,13vw,230px);height:auto;margin:0 0 22px;color:var(--teal)}
+.hero h1{color:#fff;font-size:clamp(2.2rem,1.1rem + 3.1vw,5rem);font-weight:800;line-height:1.04;max-width:13ch}
+.hero .lead{margin-top:22px;font-size:clamp(1.08rem,.95rem + .45vw,1.45rem);line-height:1.5;color:#E3ECED;max-width:44ch}
+.hero .cta{margin-top:34px}
+/* tytul sekcji z kreska wznoszaca sie w dach */
+.sek{padding:clamp(64px,9vw,128px) 0}
+.tyt{display:flex;flex-direction:column;gap:18px;margin-bottom:clamp(32px,4vw,56px)}
+.tyt h2{font-size:clamp(1.85rem,1.1rem + 2vw,3.3rem);max-width:22ch}
+.tyt p{color:var(--mut);max-width:60ch;font-size:clamp(1.02rem,.95rem + .25vw,1.22rem)}
+@media (min-width:1100px){.tyt{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:clamp(40px,5vw,110px);row-gap:20px;align-items:end}.tyt .kreska{grid-column:1/-1}.tyt p{padding-bottom:.35em}.on-txt .tyt{display:flex;align-items:flex-start}}
+.kreska{display:block;width:118px;height:30px;color:var(--teal)}
+.ciem .kreska{color:var(--teal)}
+/* mieszkancy */
+.mk{background:#fff}
+.mk-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:2px solid var(--ink)}
+.mk-it{padding:28px 28px 30px 0;border-right:1px solid var(--line);min-width:0}
+.mk-it+.mk-it{padding-left:28px}
+.mk-it:last-child{border-right:0}
+.mk-it h3{font-size:1.12rem;font-weight:700;color:var(--mut);font-family:"Source Sans 3","SS fb",Arial,sans-serif;letter-spacing:0}
+.mk-it a.nr{display:inline-block;margin-top:10px;font:800 clamp(1.6rem,1rem + 1.3vw,2.4rem)/1.05 Archivo,"Arch fb",Arial,sans-serif;color:var(--ink);text-decoration:none;white-space:nowrap}
+.mk-it a.nr:hover{color:var(--teal2)}
+.mk-it p{margin-top:12px;color:var(--mut);font-size:.98rem}
+.mk-it.alarm{background:var(--dark);color:#fff;padding-left:28px;border-right:0}
+.mk-it.alarm h3{color:#9FD3D8}
+.mk-it.alarm a.nr{color:#fff}
+.mk-it.alarm p{color:#C9D6D8}
+.mk-it .link{display:inline-flex;align-items:center;gap:10px;margin-top:12px;font:700 1.15rem/1.2 Archivo,"Arch fb",Arial,sans-serif;color:var(--teal2);text-decoration:none;border-bottom:2px solid var(--teal)}
+.mk-mail{display:flex;flex-wrap:wrap;gap:8px 36px;margin-top:26px;color:var(--mut);font-size:1rem}
+.mk-mail a{color:var(--ink);font-weight:600;text-decoration:none;border-bottom:1px solid var(--line)}
+.mk-mail a:hover{border-color:var(--teal2);color:var(--teal2)}
+/* oferta */
+.of{background:var(--g)}
+.tor{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:clamp(14px,1.4vw,24px)}
+.kar{background:#fff;padding:0 26px 28px;min-width:0;display:flex;flex-direction:column}
+.kar .okna{display:block;width:100%;height:58px;color:var(--teal);margin-bottom:16px}
+.kar h3{font-size:clamp(1.18rem,1rem + .35vw,1.45rem);line-height:1.18}
+.kar p{margin-top:12px;color:var(--mut);font-size:.98rem}
+.kar ul{margin:16px 0 0;padding:0;list-style:none;font-size:.97rem}
+.kar li{position:relative;padding-left:18px;margin-top:6px}
+.kar li::before{content:"";position:absolute;left:2px;top:.42em;width:2px;height:.75em;background:repeating-linear-gradient(180deg,var(--teal) 0 3px,transparent 3px 6px)}
+.of-cena{margin-top:clamp(28px,3vw,44px);display:flex;flex-wrap:wrap;align-items:center;gap:18px 36px;color:var(--mut)}
+.of-cena p{max-width:62ch}
+.tor-nav{display:none}
+/* zakres - ciemna */
+.ciem{background:var(--dark);color:#fff}
+.ciem h2{color:#fff}
+.ciem .tyt p{color:#C3D1D3}
+.zak{columns:3 300px;column-gap:clamp(28px,3.5vw,64px);margin:0;padding:0;list-style:none}
+.zak li{break-inside:avoid;position:relative;padding:14px 0 14px 30px;border-top:1px solid rgba(255,255,255,.12);color:#E6EEEF;line-height:1.45}
+.zak li::before{content:"";position:absolute;left:4px;top:18px;width:12px;height:16px;border:1.5px solid var(--teal);border-top:0;border-bottom:0;background:repeating-linear-gradient(180deg,var(--teal) 0 3px,transparent 3px 6px) center/1.5px 100% no-repeat}
+/* o nas */
+.on-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(32px,5vw,96px);align-items:center}
+.on-foto{margin:0;position:relative}
+.on-foto button{display:block;width:100%;padding:0;border:0;background:none;cursor:zoom-in}
+.on-foto img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.on-foto figcaption{margin-top:10px;font-size:.85rem;color:var(--mut)}
+.on-txt p{color:var(--mut);margin-top:18px;max-width:62ch}
+.on-txt p:first-of-type{margin-top:0;color:var(--ink);font-size:clamp(1.1rem,1rem + .35vw,1.35rem);line-height:1.5}
+.typy{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 0;padding:0;list-style:none}
+.typy li{padding:9px 14px;border:1px solid var(--line);font-weight:600;font-size:.95rem;background:#fff}
+.kroki{margin:30px 0 0;padding:0;list-style:none;border-top:1px solid var(--line)}
+.kroki li{display:grid;grid-template-columns:minmax(0,12rem) minmax(0,1fr);gap:6px 24px;padding:16px 0;border-bottom:1px solid var(--line)}
+.kroki b{font-family:Archivo,"Arch fb",Arial,sans-serif;font-weight:700}
+.kroki span{color:var(--mut)}
+/* kontakt */
+.ko{background:var(--g)}
+.ko-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(28px,4vw,80px);align-items:start}
+.dane dl{margin:0;display:grid;grid-template-columns:minmax(0,11rem) minmax(0,1fr);gap:0 20px}
+.dane dt,.dane dd{margin:0;padding:12px 0;border-top:1px solid var(--line)}
+.dane dt{color:var(--mut);font-size:.95rem}
+.dane dd{font-weight:600;overflow-wrap:anywhere}
+.dane dd a{text-decoration:none}
+.dane dd a:hover{color:var(--teal2)}
+.mapa{margin-top:28px;position:relative;aspect-ratio:16/10;background:#dfe6e8;overflow:hidden}
+.mapa iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.mapa .ph-map{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--mut);font-size:.95rem;text-align:center;padding:16px}
+form{background:#fff;padding:clamp(22px,2.6vw,44px)}
+form h3{font-size:clamp(1.3rem,1.1rem + .5vw,1.7rem)}
+form .opis{margin-top:8px;color:var(--mut);font-size:.98rem}
+.pola{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:22px}
+.pole{display:flex;flex-direction:column;gap:6px;min-width:0}
+.pole.cale{grid-column:1/-1}
+label{font-weight:600;font-size:.95rem}
+input,select,textarea{font:inherit;font-size:1rem;width:100%;padding:12px 14px;border:1px solid #B9C5C8;border-radius:2px;background:#fff;color:var(--ink)}
+textarea{min-height:130px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--teal2);outline-offset:1px;border-color:var(--teal2)}
+[aria-invalid=true]{border-color:#B3261E}
+.zgoda{display:flex;gap:10px;align-items:flex-start;margin-top:16px;font-size:.92rem;color:var(--mut)}
+.zgoda input{width:20px;height:20px;flex:none;margin-top:2px}
+form .btn{margin-top:22px}
+.msg{margin-top:16px;padding:14px 16px;background:#E3F2F3;border-left:3px solid var(--teal2)}
+.msg[hidden]{display:none}
+/* stopka */
+.stopka{background:var(--dark2);color:#B6C4C6;padding:clamp(44px,5vw,72px) 0 28px;font-size:.95rem}
+.st-grid{display:grid;grid-template-columns:minmax(0,1.3fr) repeat(3,minmax(0,1fr));gap:28px clamp(24px,3vw,56px)}
+.stopka img{height:40px;width:auto}
+.stopka h3{color:#fff;font-size:1rem;margin-bottom:12px}
+.stopka p{line-height:1.6}
+.stopka a{text-decoration:none}
+.stopka a:hover{color:#fff}
+.st-dol{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;align-items:center;margin-top:36px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);font-size:.88rem}
+.st-dol .zr{flex:1 1 420px;color:#8FA0A3}
+/* pasek mobilny */
+.mob{display:none}
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:90;background:rgba(10,16,18,.94);display:flex;align-items:center;justify-content:center;padding:56px 16px}
+.lb[hidden]{display:none}
+.lb img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+.lb button{position:absolute;top:10px;right:10px;width:48px;height:48px;border:0;background:none;color:#fff;font-size:34px;line-height:1;cursor:pointer}
+.lb p{position:absolute;left:16px;right:70px;bottom:14px;color:#cfd9db;font-size:.9rem}
+/* 2560 */
+@media (min-width:2200px){.tor{gap:28px}.kar{padding:0 32px 34px}}
+/* tablet */
+@media (max-width:1599px){
+  .tor{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:minmax(280px,30%);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px}
+  .tor::-webkit-scrollbar{display:none}
+  .kar{scroll-snap-align:start}
+  .tor.drag{scroll-snap-type:none;cursor:grabbing}
+  .tor-nav{display:flex;gap:10px;margin-top:20px}
+  .tor-nav button{width:48px;height:48px;border:1px solid #B9C5C8;background:#fff;cursor:pointer;color:var(--ink)}
+  .tor-nav button:hover{border-color:var(--teal2);color:var(--teal2)}
+  .tor-nav svg{width:20px;height:14px}
+}
+@media (max-width:1240px){
+  .tor{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:minmax(280px,34%);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px}
+  .tor::-webkit-scrollbar{display:none}
+  .kar{scroll-snap-align:start}
+  .tor.drag{scroll-snap-type:none;cursor:grabbing}
+  .tor-nav{display:flex;gap:10px;margin-top:20px}
+  .tor-nav button{width:48px;height:48px;border:1px solid #B9C5C8;background:#fff;cursor:pointer;color:var(--ink)}
+  .tor-nav button:hover{border-color:var(--teal2);color:var(--teal2)}
+  .tor-nav svg{width:20px;height:14px}
+  .mk-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .mk-it:nth-child(2){border-right:0}
+  .mk-it:nth-child(3){padding-left:0;border-top:1px solid var(--line)}
+  .mk-it.alarm{border-top:0}
+  .st-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:1080px){
+  .menu .ext,.tel{display:none}
+}
+@media (max-width:899px){
+  .burger{display:block;margin-left:0}
+  .ktel{display:flex;align-items:center;justify-content:center;margin-left:auto;width:48px;height:48px;color:var(--ink)}
+  .ktel svg{width:22px;height:22px}
+  .menu{position:fixed;top:var(--hh);left:0;right:0;bottom:0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:8px 16px 24px;transform:translateX(100%);transition:transform .25s;visibility:hidden;margin:0;overflow:auto}
+  .top.open .menu{transform:none;visibility:visible}
+  .menu a{padding:18px 4px;border-bottom:1px solid var(--line);font-size:1.15rem}
+  .menu a.on::after{display:none}
+  .menu .ext{display:block}
+  .menu .tel{display:flex;align-items:flex-start;border:0;padding:20px 4px 0}
+  .top.open .burger span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+  .top.open .burger span:nth-child(2){opacity:0}
+  .top.open .burger span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+  .on-grid,.ko-grid{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:760px){
+  .hero{flex-direction:column;align-items:stretch}
+  .hero::before{display:none}
+  .hero .ph{position:relative;inset:auto;flex:1 1 auto;min-height:max(31svh,190px)}
+  .hero .ph img{position:absolute;inset:0;object-position:50% 45%}
+  .hero .ph::after{content:"";position:absolute;left:0;right:0;bottom:0;height:42%;background:linear-gradient(0deg,var(--dark),rgba(27,43,46,0))}
+  .hero-in{flex:0 0 auto;width:100%;padding:4px 16px 28px;background:var(--dark)}
+  .hero-txt{max-width:none}
+  .dach{width:118px;margin-bottom:14px}
+  .hero h1{font-size:clamp(1.95rem,8.6vw,2.6rem);max-width:none}
+  .hero .lead{margin-top:14px;font-size:1.02rem;line-height:1.48}
+  .hero .cta{margin-top:24px}
+  .hero .btn{width:100%;justify-content:space-between}
+  .tor{grid-auto-columns:84%}
+  .mk-grid{grid-template-columns:minmax(0,1fr)}
+  .mk-it,.mk-it+.mk-it{padding:22px 0;border-right:0;border-top:1px solid var(--line)}
+  .mk-it:first-child{border-top:0}
+  .mk-it.alarm{padding:22px 20px;margin:0 -16px;border-top:0}
+  .pola{grid-template-columns:minmax(0,1fr)}
+  .kroki li{grid-template-columns:minmax(0,1fr)}
+  .dane dl{grid-template-columns:minmax(0,1fr)}
+  .dane dt{padding-bottom:0}
+  .dane dd{border-top:0;padding-top:2px}
+  .st-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 18px}
+  .st-grid>div:first-child{grid-column:1/-1}
+  .mob{display:grid;grid-template-columns:1fr 1.4fr;position:fixed;left:0;right:0;bottom:0;z-index:40;transform:translateY(110%);transition:transform .25s;box-shadow:0 -6px 18px rgba(0,0,0,.12)}
+  .mob.widac{transform:none}
+  .mob a{display:flex;align-items:center;justify-content:center;min-height:56px;font:700 1rem/1 Archivo,"Arch fb",Arial,sans-serif;text-decoration:none}
+  .mob a:first-child{background:#fff;color:var(--ink);border-top:1px solid var(--line)}
+  .mob a:last-child{background:var(--teal2);color:#fff}
+  .stopka{padding-bottom:84px}
+}
+@media (max-height:700px) and (max-width:760px){
+  .hero h1{font-size:clamp(1.8rem,7.6vw,2.2rem)}
+  .dach{margin-bottom:10px}
+  .hero-in{padding-bottom:22px}
+}
+@media (min-width:761px) and (max-height:820px){
+  .hero h1{font-size:clamp(2.1rem,1rem + 2.7vw,4rem)}
+  .hero-in{padding:32px 0}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+<style>.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+</style>
+</head>
+<body>
+<a class="skip" href="#tresc">Przejdź do treści</a>
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="logo" href="#start" aria-label="Property Center - zarządzanie nieruchomościami, strona główna"><img src="img/logo.svg" width="222" height="41" alt="Property Center - zarządzanie nieruchomościami"></a>
+    <a class="ktel" href="tel:+48660281681" aria-label="Zadzwoń do administratora: 660 281 681"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M5 3.5h3.6l1.6 4.4-2.3 1.5a11.5 11.5 0 0 0 6.7 6.7l1.5-2.3 4.4 1.6V19a1.6 1.6 0 0 1-1.7 1.6C10.6 20.1 3.9 13.4 3.4 5.2A1.6 1.6 0 0 1 5 3.5z"/></svg></a>
+    <button class="burger" id="burger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav class="menu" id="menu" aria-label="Menu główne">
+      <a href="#mieszkancy">Dla mieszkańców</a>
+      <a href="#oferta">Oferta</a>
+      <a href="#zakres">Zakres zarządzania</a>
+      <a href="#o-nas">O nas</a>
+      <a href="#kontakt">Kontakt</a>
+      <a class="ext" href="https://www.kartotekaonline.pl/index.php" rel="noopener" target="_blank">Kartoteka OnLine</a>
+      <a class="tel" href="tel:+48660281681"><small>Administrator</small><b>660 281 681</b></a>
+    </nav>
+  </div>
+</header>
+
+<main id="tresc">
+<section class="hero" id="start">
+  <picture class="ph">
+    <source media="(max-width:760px)" srcset="img/hero-m-480.webp 480w, img/hero-m-720.webp 720w, img/hero-m-960.webp 960w" sizes="100vw">
+    <img src="img/hero-1600.webp" srcset="img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-2000.webp 2000w" sizes="100vw" width="2000" height="1333" fetchpriority="high" decoding="async" alt="Nowoczesny budynek mieszkalny w Krakowie">
+  </picture>
+  <div class="hero-in wrap">
+    <div class="hero-txt">
+      <svg class="dach" viewBox="0 0 230 40" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"><path d="M0 38H96V20L114 6l18 14v18h98"/><path d="M108 26v8M120 26v8" stroke-dasharray="3 4"/></svg>
+      <h1>Zarządzanie nieruchomościami w&nbsp;Krakowie</h1>
+      <p class="lead">Wspólnoty mieszkaniowe i budynki komercyjne. Licencjonowani zarządcy, własny serwis techniczny i stały, rzeczowy kontakt z mieszkańcami.</p>
+      <div class="cta"><a class="btn" id="hcta" href="#kontakt">Zapytaj o zarządzanie<svg viewBox="0 0 22 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M1 15h6V8l4-3 4 3v7h6"/></svg></a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sek mk" id="mieszkancy" aria-labelledby="mk-t">
+  <div class="wrap">
+    <div class="tyt">
+      <svg class="kreska" viewBox="0 0 118 30" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M0 29h44V15l13-10 13 10v14h48"/></svg>
+      <h2 id="mk-t">Kontakt dla mieszkańców</h2>
+      <p>Awaria, pytanie o rozliczenie czy sprawa do administratora - każdy numer od razu pod ręką, bez szukania w zakładkach.</p>
+    </div>
+    <div class="mk-grid">
+      <div class="mk-it">
+        <h3>Administrator</h3>
+        <a class="nr" href="tel:+48660281681">660 281 681</a>
+        <p>Sprawy wspólnoty, zebrania, uchwały, dokumenty.</p>
+      </div>
+      <div class="mk-it">
+        <h3>Serwis techniczny, 7-15</h3>
+        <a class="nr" href="tel:+48788833889">788 833 889</a>
+        <p>Usterki i zgłoszenia w godzinach pracy serwisu.</p>
+      </div>
+      <div class="mk-it alarm">
+        <h3>Serwis techniczny 24/7</h3>
+        <a class="nr" href="tel:+48660281481">660 281 481</a>
+        <p>Awarie, które nie mogą czekać do rana: zalanie, brak wody, prądu, ogrzewania.</p>
+      </div>
+      <div class="mk-it">
+        <h3>Kartoteka OnLine</h3>
+        <a class="link" href="https://www.kartotekaonline.pl/index.php" rel="noopener" target="_blank">Zaloguj się do kartoteki</a>
+        <p>Rozliczenia i dokumenty lokalu w jednym miejscu.</p>
+      </div>
+    </div>
+    <div class="mk-mail">
+      <span>Administracja: <a href="mailto:administracja@propertycenter.pl">administracja@propertycenter.pl</a></span>
+      <span>Księgowość: <a href="mailto:ksiegowosc@propertycenter.pl">ksiegowosc@propertycenter.pl</a></span>
+    </div>
+  </div>
+</section>
+
+<section class="sek of" id="oferta" aria-labelledby="of-t">
+  <div class="wrap">
+    <div class="tyt">
+      <svg class="kreska" viewBox="0 0 118 30" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M0 29h44V15l13-10 13 10v14h48"/></svg>
+      <h2 id="of-t">Pełna opieka nad budynkiem z jednego miejsca</h2>
+      <p>Przejmujemy nieruchomość w zarządzanie i prowadzimy ją od strony administracyjnej, technicznej, księgowej i prawnej. Dla wspólnot mieszkaniowych i właścicieli budynków komercyjnych.</p>
+    </div>
+    <div class="tor" id="tor-of" data-tor>
+      <article class="kar">
+        <svg class="okna" viewBox="0 0 240 58" preserveAspectRatio="xMinYMid meet" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M0 57h40V22l20-15 20 15v35h160"/><path d="M53 32v14M67 32v14" stroke-dasharray="3 4"/></svg>
+        <h3>Administracja i zarządzanie</h3>
+        <p>Bieżące prowadzenie wspólnoty: dokumenty, uchwały, plany i sprawozdania.</p>
+        <ul><li>przygotowanie i obsługa zebrań</li><li>roczne plany gospodarcze</li><li>rejestr uchwał i archiwum</li></ul>
+      </article>
+      <article class="kar">
+        <svg class="okna" viewBox="0 0 240 58" preserveAspectRatio="xMinYMid meet" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M0 57h40V22l20-15 20 15v35h160"/><path d="M53 32v14M67 32v14" stroke-dasharray="3 4"/></svg>
+        <h3>Obsługa techniczna</h3>
+        <p>Utrzymanie i eksploatacja budynku, serwis w godzinach 7-15 i dyżur 24/7.</p>
+        <ul><li>przeglądy i naprawy</li><li>nadzór nad dostawami mediów</li><li>kontrola jakości usług</li></ul>
+      </article>
+      <article class="kar">
+        <svg class="okna" viewBox="0 0 240 58" preserveAspectRatio="xMinYMid meet" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M0 57h40V22l20-15 20 15v35h160"/><path d="M53 32v14M67 32v14" stroke-dasharray="3 4"/></svg>
+        <h3>Obsługa finansowo-księgowa</h3>
+        <p>Rozliczenia przez rachunki bankowe wspólnoty i pełna księgowość nieruchomości.</p>
+        <ul><li>rozliczenia mediów</li><li>roczne sprawozdania finansowe</li><li>analiza i optymalizacja kosztów</li></ul>
+      </article>
+      <article class="kar">
+        <svg class="okna" viewBox="0 0 240 58" preserveAspectRatio="xMinYMid meet" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M0 57h40V22l20-15 20 15v35h160"/><path d="M53 32v14M67 32v14" stroke-dasharray="3 4"/></svg>
+        <h3>Obsługa prawna</h3>
+        <p>Współpraca z prawnikami, którzy specjalizują się w obsłudze i obrocie nieruchomościami.</p>
+        <ul><li>rejestracja wspólnoty, REGON i NIP</li><li>reprezentowanie wspólnoty</li><li>doradztwo przy ubezpieczeniu</li></ul>
+      </article>
+      <article class="kar">
+        <svg class="okna" viewBox="0 0 240 58" preserveAspectRatio="xMinYMid meet" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M0 57h40V22l20-15 20 15v35h160"/><path d="M53 32v14M67 32v14" stroke-dasharray="3 4"/></svg>
+        <h3>Utrzymanie czystości</h3>
+        <p>Porządek w częściach wspólnych i wokół budynku, pod stałą kontrolą zarządcy.</p>
+        <ul><li>klatki schodowe i garaże</li><li>teren wokół budynku</li><li>odbiór nieczystości</li></ul>
+      </article>
+    </div>
+    <div class="tor-nav" data-nav="tor-of"><button type="button" data-k="-1" aria-label="Poprzednia usługa"><svg viewBox="0 0 20 14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 7H2m5-6L1 7l6 6"/></svg></button><button type="button" data-k="1" aria-label="Następna usługa"><svg viewBox="0 0 20 14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 7h17m-5-6 6 6-6 6"/></svg></button></div>
+    <div class="of-cena">
+      <p>Cenę zarządzania ustalamy indywidualnie, po poznaniu budynku i potrzeb wspólnoty. Pracujemy na specjalistycznych programach do zarządzania nieruchomościami, więc dane każdego budynku są uporządkowane i zarchiwizowane.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sek ciem" id="zakres" aria-labelledby="zk-t">
+  <div class="wrap">
+    <div class="tyt">
+      <svg class="kreska" viewBox="0 0 118 30" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M0 29h44V15l13-10 13 10v14h48"/></svg>
+      <h2 id="zk-t">Co obejmuje zarządzanie wspólnotą</h2>
+      <p>Pełna lista czynności, które przejmujemy od zarządu wspólnoty mieszkaniowej.</p>
+    </div>
+    <ul class="zak">
+      <li>Rejestracja wspólnoty mieszkaniowej albo aktualizacja jej danych, m.in. REGON i NIP</li>
+      <li>Rozliczenia przez rachunki bankowe wspólnoty</li>
+      <li>Dokumenty potrzebne do podjęcia uchwał</li>
+      <li>Utrzymanie i eksploatacja budynku</li>
+      <li>Woda, prąd, odbiór ścieków i odpadów: zapewnienie, nadzór nad ciągłością i rozliczenia</li>
+      <li>Kontrola jakości wykonywanych usług</li>
+      <li>Analiza i optymalizacja kosztów nieruchomości</li>
+      <li>Informowanie zarządu wspólnoty o wykonanych obowiązkach</li>
+      <li>Roczne plany gospodarcze</li>
+      <li>Roczne sprawozdania finansowe</li>
+      <li>Przygotowanie i obsługa zebrań wspólnoty</li>
+      <li>Przechowywanie, zabezpieczenie i archiwizacja dokumentów</li>
+      <li>Pomoc i doradztwo przy ubezpieczeniu nieruchomości</li>
+      <li>Rejestr uchwał i dokumentacja zebrań</li>
+      <li>Reprezentowanie wspólnoty na zewnątrz w zakresie z umowy</li>
+    </ul>
+  </div>
+</section>
+
+<section class="sek" id="o-nas" aria-labelledby="on-t">
+  <div class="wrap on-grid">
+    <figure class="on-foto">
+      <button type="button" data-lb="img/onas-1600.webp" data-cap="Budynek mieszkalny w Krakowie (zdjęcie poglądowe)" aria-label="Powiększ zdjęcie"><img src="img/onas-1024.webp" srcset="img/onas-640.webp 640w, img/onas-1024.webp 1024w" sizes="(max-width:899px) 92vw, 48vw" width="1024" height="768" loading="lazy" decoding="async" alt="Budynek mieszkalny w Krakowie"></button>
+    </figure>
+    <div class="on-txt">
+      <div class="tyt">
+        <svg class="kreska" viewBox="0 0 118 30" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M0 29h44V15l13-10 13 10v14h48"/></svg>
+        <h2 id="on-t">Licencjonowani zarządcy z Krakowa</h2>
+      </div>
+      <p>Property Center zarządza nieruchomościami mieszkaniowymi i komercyjnymi. Usługi świadczą licencjonowani zarządcy z wiedzą, doświadczeniem i uprawnieniami branżowymi.</p>
+      <p>Jesteśmy zespołem młodych ludzi, którzy łączą energię z wiedzą o rynku nieruchomości. Ponad wszystko cenimy ciągły i rzeczowy kontakt z mieszkańcami. Współpracujemy z fachowcami potrzebnymi do pełnej obsługi budynku i z prawnikami od nieruchomości.</p>
+      <ul class="typy" aria-label="Doświadczenie w zarządzaniu">
+        <li>wspólnoty mieszkaniowe</li><li>szpitale</li><li>fabryki</li><li>magazyny cross-dock</li>
+      </ul>
+      <ol class="kroki" aria-label="Jak zaczynamy współpracę">
+        <li><b>Rozmowa</b><span>Poznajemy budynek, potrzeby i możliwości wspólnoty.</span></li>
+        <li><b>Plan współpracy</b><span>Przedstawiamy zakres obsługi dopasowany do nieruchomości.</span></li>
+        <li><b>Umowa</b><span>Podpisujemy umowę o zarządzanie nieruchomością wspólną albo w innym uzgodnionym zakresie.</span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="sek ko" id="kontakt" aria-labelledby="ko-t">
+  <div class="wrap">
+    <div class="tyt">
+      <svg class="kreska" viewBox="0 0 118 30" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M0 29h44V15l13-10 13 10v14h48"/></svg>
+      <h2 id="ko-t">Porozmawiajmy o Państwa budynku</h2>
+      <p>Napisz kilka słów o nieruchomości: adres, liczba lokali, czego potrzebuje wspólnota. Odpowiemy i zaproponujemy plan współpracy.</p>
+    </div>
+    <div class="ko-grid">
+      <div class="dane">
+        <dl>
+          <dt>Biuro</dt><dd><a href="mailto:biuro@propertycenter.pl">biuro@propertycenter.pl</a></dd>
+          <dt>Administrator</dt><dd><a href="tel:+48660281681">660 281 681</a></dd>
+          <dt>Serwis 7-15</dt><dd><a href="tel:+48788833889">788 833 889</a></dd>
+          <dt>Serwis 24/7</dt><dd><a href="tel:+48660281481">660 281 481</a></dd>
+          <dt>Siedziba</dt><dd>ul. Malborska 130, 30-624 Kraków</dd>
+        </dl>
+        <div class="mapa" id="mapa" data-src="https://www.google.com/maps?q=Malborska+130,+30-624+Krak%C3%B3w&amp;output=embed"><div class="ph-map">Mapa: ul. Malborska 130, Kraków</div></div>
+      </div>
+      <form id="form" novalidate>
+        <h3>Zapytanie o zarządzanie</h3>
+        <p class="opis">Podgląd formularza - w tej wersji nic nie jest wysyłane.</p>
+        <div class="pola">
+          <div class="pole"><label for="f-im">Imię i nazwisko</label><input id="f-im" name="imie" autocomplete="name" required></div>
+          <div class="pole"><label for="f-tel">Telefon</label><input id="f-tel" name="tel" type="tel" autocomplete="tel"></div>
+          <div class="pole"><label for="f-em">E-mail</label><input id="f-em" name="email" type="email" autocomplete="email" required></div>
+          <div class="pole"><label for="f-rod">Rodzaj nieruchomości</label><select id="f-rod" name="rodzaj"><option>Wspólnota mieszkaniowa</option><option>Budynek komercyjny</option><option>Obiekt przemysłowy lub magazyn</option><option>Inne</option></select></div>
+          <div class="pole cale"><label for="f-msg">Wiadomość</label><textarea id="f-msg" name="wiadomosc" required placeholder="Adres budynku, liczba lokali, czego Państwo potrzebują"></textarea></div>
+        </div>
+        <label class="zgoda"><input type="checkbox" required> <span>Zgadzam się na przetwarzanie danych w celu odpowiedzi na zapytanie.</span></label>
+        <button class="btn" type="submit">Wyślij zapytanie<svg viewBox="0 0 22 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M1 15h6V8l4-3 4 3v7h6"/></svg></button>
+        <p class="msg" id="msg" role="status" hidden>Dziękujemy. To podgląd, więc wiadomość nie została wysłana.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="stopka">
+  <div class="wrap">
+    <div class="st-grid">
+      <div>
+        <img src="img/logo-biale.svg" width="222" height="41" alt="Property Center" loading="lazy">
+        <p style="margin-top:16px">Property Center Sp. z o.o.<br>ul. Malborska 130, 30-624 Kraków<br>KRS 0000777337, NIP 6793182311, REGON 382846904</p>
+      </div>
+      <div>
+        <h3>Mieszkańcy</h3>
+        <p><a href="tel:+48660281681">Administrator 660 281 681</a><br><a href="tel:+48788833889">Serwis 7-15: 788 833 889</a><br><a href="tel:+48660281481">Serwis 24/7: 660 281 481</a></p>
+      </div>
+      <div>
+        <h3>E-mail</h3>
+        <p><a href="mailto:biuro@propertycenter.pl">biuro@</a><br><a href="mailto:administracja@propertycenter.pl">administracja@</a><br><a href="mailto:ksiegowosc@propertycenter.pl">ksiegowosc@</a></p>
+      </div>
+      <div>
+        <h3>Na skróty</h3>
+        <p><a href="#oferta">Oferta</a><br><a href="#zakres">Zakres zarządzania</a><br><a href="https://www.kartotekaonline.pl/index.php" rel="noopener" target="_blank">Kartoteka OnLine</a></p>
+      </div>
+    </div>
+    <div class="st-dol">
+      <span>&copy; <span id="rok">2026</span> Property Center</span>
+      <span class="zr">Zdjęcia poglądowe krakowskich budynków: Juhele_CZ, Flickr (CC0) - do wymiany na zdjęcia zarządzanych nieruchomości.</span>
+      <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=propertycenter.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+
+    </div>
+  </div>
+</footer>
+<nav class="mob" id="mob" aria-label="Szybki kontakt"><a href="tel:+48660281681">Zadzwoń</a><a href="#kontakt">Zapytaj o zarządzanie</a></nav>
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Powiększone zdjęcie"><img alt=""><p></p><button type="button" aria-label="Zamknij">&times;</button></div>
+<script src="app.js" defer></script>
+</body>
+</html>
